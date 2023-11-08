@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Giới thiệu và ngôn ngữ lập trình Javascript / JAVA là ngôn ngữ lập trình
+      hướng đối tượng
+    </h1>
+
+    <h2>Chương trình tính tiền</h2>
+    <p>Số thứ 1</p>
+    <input type="text" placeholder=" Nhập vào số tiền số thứ 1" id="sothu1" />
+    <p>Số thứ 2</p>
+    <input type="text" placeholder=" Nhập vào số tiền số thứ 2 " id="sothu2" />
+    <button onclick="epKieu()">Ép Kiểu</button>
+
+    <!--  -->
+    <script src="main.js"></script>
+    <script>
+      function epKieu() {
+        let sothu1_string = document.getElementById("sothu1").value;
+        console.log("kieu du liệu của so thjú 1 ", typeof sothu1_string);
+
+        let sothu1 = Number(sothu1_string);
+        console.log("Sau khi đã ép kiểu ", typeof sothu1);
+      }
+      //  Chương trình  Tinhtong
+      //   function Tinhtong(a, b) {
+      //    return a + b;
+      //  }
+      //   const a = Tinhtong(1, 2);
+      //   console.log("TỔng là ", a);
+      // biến trong javascript code là định nghĩa để lưu trữ dữ liệu
+      //   let a = 5;
+      //   b = 6;
+      //   c = a + b;
+      //   console.log(" tổng là ", c);
+
+      // developer tool
+      // khối
+      //   {
+      //     let a = 1;
+      //     b = a + a + a + a + a + a;
+      //     console.log("  b trong khối thứ 2 ", b);
+      //   }
+      //   {
+      //     let a = 1;
+      //     b = a + a + a;
+      //     console.log("  b trong khối thứ 1  ", b);
+      //   }
+
+      //   let camelCase = 123213;
+      //   let user_id = 123;
+      //   let salary = 5;
+      //   let asdasdsadsadsadsa;
+      //   console.log("salary ", asdasdsadsadsadsa);
+      //
+
+      //   let userSalary = 1000000;
+      //   let tenNhanvien = "Nguyen Van A ";
+      //   let daThanhToan = true;
+      //   let daThanhtoan2 = false;
+      //   let a = undefined;
+      //   let b = null;
+      //   let x = 1;
+      //   let y = 2;
+      //   x = x + 2;
+
+      //   console.log("x ", x);
+
+      //   let a = "18";
+      //   console.log(a === 18);
+      //   //cau dieu kien re nhánh
+      // thì mình ===
+      //   const objUser = { name: "Nguyen Van A", age: 15 };
+      //   console.log(objUser?.salary);
+      function tinhLuongCty() {
+        const a = 10_000;
+        // tinh luong theo thang
+
+        // thong báo
+      }
+
+      //   function kiemtraDauVao(thamso1, thamso2) {
+      //     // kiem tra
+      //     // nen viết những đoạn kiểm
+      //     if (typeof thamso1 === "string") {
+      //       console.log(" Tham so 1  không đc là chuỗi");
+      //       return;
+      //     } else if (typeof thamso2 === "string") {
+      //       console.log("Tham so 2 không đc là chuỗi");
+      //       return;
+      //     }
+      //     console.log("tính toán");
+      //   }
+      //   kiemtraDauVao(123, 3456);
+
+      let thang = window.prompt("Nhập vào số tháng ");
+
+      //   Browser Object Model
+      // check theo  .  nếu match khớp
+      switch (thang) {
+        case 1: // trường hợp này
+          alert("tháng 1 ");
+          break;
+        case "2":
+          alert("tháng 2 ");
+          break;
+        case "3":
+          alert("tháng 3 ");
+          break;
+        case "4":
+          alert("tháng 4 ");
+          break;
+        default:
+          alert("tháng  ko hoip le");
+          break;
+      }
+      console.log("xong luon ");
+      //   if (tuoi >= 18) {
+      //     window.alert("Ban được vào club");
+      //   } else if (tuoi >= 18 && tuoi <= 69) {
+      //     window.alert("Ban vẫn được vào club");
+      //   } else {
+      //     window.alert("Ban không đủ tuổi ");
+      //   }
+    </script>
+  </body>
+</html>
